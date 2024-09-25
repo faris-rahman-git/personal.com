@@ -1,0 +1,40 @@
+/* Custom styles for the navbar */
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 1004px) {
+    #menu1{
+        display: none;
+    }
+}
+
+@media (min-width: 1005px) {
+    #menu2{
+        display: none;
+    }
+}
+
